@@ -86,13 +86,10 @@ function getRandomNumber(min, max) {
 imageSection.addEventListener('click', thehandlerImageClick);
 function thehandlerImageClick(event) {
 
-  for(let i=0; i<25;i++){
     let counter = 0;
-  h1title.textContent = "React application " + counter ;
-  pfooter.textContent = "@copy right by wissam " +counter;
-  counter++;
-  }
-
+  h1title.textContent = "React application " + counter + 1 ;
+  pfooter.textContent = "@copy right by wissam " +counter + 1;
+  counter ++;
 
   if ((event.target.id === 'first_Image' || event.target.id === 'second_Image' || event.target.id === 'third_Image') && counter < number_of_round) {
 
